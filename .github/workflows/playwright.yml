@@ -5,8 +5,8 @@ on:
   pull_request:
     branches: [ main, master ]
   schedule:
-    - cron: '00 15 * * *'
-    timezone: 'Asia /Kolkata'
+    - cron: '05 15 * * *'
+      timezone: 'Asia/Kolkata'
 jobs:
   test:
     runs-on: ubuntu-latest
