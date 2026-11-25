@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main, master ]
   schedule:
-    - cron: '05 15 * * *'
+    - cron: '30 15 * * *'
       timezone: 'Asia/Kolkata'
 jobs:
   test:
