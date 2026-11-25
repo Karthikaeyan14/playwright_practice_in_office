@@ -4,7 +4,7 @@ class Login:
     def __init__(self, page: Page):
         self.page = page
         self.url = "https://133806330-19-0-all.runbot358.odoo.com/"
-        self.sign_in=page.locator("//a[@class='o_nav_link_btn nav-link border px-3']")
+        self.sign_in=page.locator("li a[class='o_nav_link_btn nav-link border px-3']")
         self.email=page.locator("#login")
         self.password=page.locator("#password")
         self.login_button=page.locator("//button[text()='Log in']")
