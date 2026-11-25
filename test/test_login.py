@@ -6,12 +6,14 @@ from page_object_model.login import Login
 def test_valid_login(page:Page):
     login=Login(page)
     login.navigation()
+    login.sign_click()
     login.login_details("admin","admin")
 
 @pytest.mark.invalid_login
 def test_invalid_login(page:Page):
     login=Login(page)
     login.navigation()
+    login.sign_click()
     login.login_details("admin","ad")
     a=login.warning_message() 
     print(a.inner_text())
