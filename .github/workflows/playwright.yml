@@ -4,9 +4,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  schedule:
-    - cron: '30 15 * * *'
-      timezone: 'Asia/Kolkata'
+  
 jobs:
   test:
     runs-on: ubuntu-latest

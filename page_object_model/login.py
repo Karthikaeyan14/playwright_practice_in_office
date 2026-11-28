@@ -3,7 +3,7 @@ from playwright.sync_api import Page, expect
 class Login:
     def __init__(self, page: Page):
         self.page = page
-        self.url = "https://133806330-19-0-all.runbot358.odoo.com/"
+        self.url = "https://134222860-19-0-all.runbot325.odoo.com/"
         self.sign_in=page.locator("li a[class='o_nav_link_btn nav-link border px-3']")
         self.email=page.locator("#login")
         self.password=page.locator("#password")

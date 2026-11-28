@@ -48,4 +48,15 @@ def test_login_2(page:Page):
     #print(alter_popup.text_content())
 
     
+def test_checkbox(page:Page):
+    username=page.locator("#userEmail")
+    password=page.locator("#userPassword")
+    print("The user login")
+    #page.goto("https://rahulshettyacademy.com/client/#/auth/login")
+    page.goto("https://rahulshettyacademy.com/client/#/auth/login")
+    username.fill("vijay1412@gmail.com")
+    password.type("Vijaykumar@14")
+    page.locator("#login").click()
+    checkbox=page.locator("//label[text()='t-shirts']")
+    checkbox.click()    
   
